@@ -10,6 +10,6 @@ app.get("/", (req, res) => {
     res.send("hello world");
 })
 
-app.use("/api/v1/vegetables", vegetableRoutes);
+app.use("amintuapi", vegetableRoutes);
 
 app.listen(port, () => console.log('running active port'));
